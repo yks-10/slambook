@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="row justify-content-center ">
+        <div class="col-md-5">
+            <h2>RECORD</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center ">
+        <div class="col-md-5">
+            <form method="POST">
+                {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="title" class="form-control" id="name" value="{{ x.name }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Blood</label>
+                            <input type="text" name="title" class="form-control" id="name" value="{{ x.blood }}" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="t">TyPE what's on your mind</label>
+                                <textarea name="t" class="form-control" id="t" value="{{ x.t }}"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="mail">Mail</label>
+                            <input type="email" name="mail" class="form-control" id="mail" value="{{ x.mail }}" required>
+                        </div>
+                        <div class="form-group">
+                                <label for="address">TyPE what's on your mind</label>
+                                <textarea name="address" class="form-control" id="address" value="{{ x.address }}"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">CONTACT</label>
+                            <input type="number" name="contact" class="form-control" id="contact" value="{{ x.contact }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact1">CONTACT</label>
+                            <input type="number" name="contact1" class="form-control" id="contact1" value="{{ x.contact1 }}" required>
+                        </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

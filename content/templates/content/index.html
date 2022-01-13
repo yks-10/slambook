@@ -1,0 +1,32 @@
+
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hi frnds!</title>
+  </head>
+  <body>
+    <img src="{% static 'content/4.png'%}"  class="img-fluid" alt="...">
+    <img src="{% static 'content/5.png'%}"  class="img-fluid" alt="...">
+
+  <div class="row justify-content-center mt-5 bg-light">
+        <div class="col-md-7 text-center">
+                 <h1> Woo!</h1>
+          <p><i>A friend is someone who can see the truth and pain in you even when you are fooling everyone else</i><br>
+            <a role="button" class="btn btn-primary btn-lg" href="{% url 'slam' %}">Start</a>
+          </p>
+        </div>
+    </div>
+     <img src="{% static 'content/1.png' %}"  class="img-fluid" alt="...">
+
+  </body>
+</html>
